@@ -12,21 +12,17 @@ function findPythTriplet() {
 
     for (let i = min; i < max; i++) {
         for (let j = min; j < max; j++) {
-            for (let k = min; k < max; k++) {
-                if (isValid(i, j, k)) {
-                    console.log(i, j, k, "are the values you're looking for");
-                    return i * j * k;
-                }
+            let k = 1000 - i - j;
+
+            if (isTriplet(i, j, k)) {
+                console.log(i, j, k, "are the values you're looking for");
+                return i * j * k;
             }
         }
     }
 
-    function isValid(a, b, c) {
-        const order = a < b && b < c;
-        const sum = a + b + c === 1000;
-        const isTriplet = Math.pow(a, 2) + Math.pow(b, 2) === Math.pow(c, 2);
-
-        return order && sum && isTriplet;
+    function isTriplet(a, b, c) {
+        return Math.pow(a, 2) + Math.pow(b, 2) === Math.pow(c, 2);
     }
 }
 
