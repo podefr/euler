@@ -16,6 +16,9 @@ function getPalindromes(max, palindromes) {
         return palindromes;
     }
 
+    // I should stop the loop when max is less than nbOfDigits
+    // Also I should do 999 * 999 then 999 * 998, 998 * 998, 997 * 998... instead of listing all possibilities in an array
+    // but ...
     while (variable * max--) {
         if (max && isPalindrome(variable * max)) {
             palindromes.push(variable * max);
