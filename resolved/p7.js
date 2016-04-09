@@ -1,4 +1,4 @@
-// https://projecteuler.net/archives
+https://projecteuler.net/problem=7
 
 function buildPrimes(n) {
     var primes = [2];
