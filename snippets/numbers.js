@@ -25,3 +25,32 @@ function sumLargeNumber(number1, number2) {
 
     return sum.join('');
 }
+
+function multiplyBigNumber(number1, number2) {
+    number1 = (number1 + '');
+    number2 = (number2 + '');
+
+    if (number1.length > number2.length) {
+        return doMultiply(number1, number2);
+    } else {
+        return doMultiply(number2, number1);
+    }
+
+    function doMultiply(longerNumber, shorterNumber, sum) {
+        longerNumber = longerNumber.split('');
+        shorterNumber = shorterNumber.split('');
+
+        let result = [];
+
+        sum = sum || [];
+
+        if (!shorterNumber) {
+            return sum.reduce((memo, number) => sumLargeNumber(memo, numer), '0');
+        }
+
+        for (let i = 0, length = shortNumber.length; i < length; i++) {
+            // do the maths
+        }
+    }
+
+}
