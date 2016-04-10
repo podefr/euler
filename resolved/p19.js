@@ -4,7 +4,6 @@
 // How many sundays fell on the first of the month between 1 Jan 1901 to 31 Dec 2000?
 
 let months = [31, -1, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function isLeapYear(year) {
     // it's a century and its divisible by 400
@@ -54,7 +53,6 @@ function getNumberOfSundays() {
     for (let year = 1901; year < 2001; year++) {
         for (let month = 0; month < 12; month++) {
             if (offset === 0) {
-                console.log(year, month)
                 numberOfSundays++;
             }
 
@@ -64,8 +62,6 @@ function getNumberOfSundays() {
 
     return numberOfSundays;
 }
-
-let daysInNineteen = getNumberOfDays(1900);
 
 console.log('number of Sundays in century that fell on a 1st', getNumberOfSundays());
 
