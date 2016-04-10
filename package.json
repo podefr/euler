@@ -1,0 +1,19 @@
+{
+  "name": "euler",
+  "version": "1.0.0",
+  "description": "My project euler playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project",
+    "euler",
+    "fun"
+  ],
+  "author": "Olivier Scherrer",
+  "license": "MIT",
+  "devDependencies": {
+    "baconjs": "^0.7.84"
+  }
+}
