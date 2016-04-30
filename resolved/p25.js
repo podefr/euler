@@ -1,6 +1,6 @@
 "use strict";
 
-const numbers = require("./lib/numbers");
+const numbers = require("../lib/numbers");
 
 function findFibonacciUntil(condition, n1, n2, index) {
     n1 = n1 || 0;
