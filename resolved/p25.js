@@ -12,9 +12,9 @@ function findFibonacciUntil(condition, n1, n2, index) {
     findFibonacciUntil(condition, n2, numbers.sumBigNumbers(n1+"", n2+""), index + 1);
 }
 
-console.log(findFibonacciUntil(((fibonacci, index) => {
+findFibonacciUntil(((fibonacci, index) => {
     if (fibonacci.length >= 1000) {
         console.log("found number at index", index);
-        return true;
+        return fibonacci;
     }
-})));
+}));
