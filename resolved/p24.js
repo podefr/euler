@@ -94,6 +94,6 @@ function getPermutation(permutation, nbPermutations) {
 }
 
 
-console.log(getPermutation("0123456789", 1e6));
+console.log(getPermutation("0123456789", 1e6-1));
 
 
